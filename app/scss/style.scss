@@ -1,14 +1,6 @@
-html {
-	box-sizing: border-box;
-}
+@import 'vars';
+@import 'font';
+@import 'global';
 
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
 
-.box {
-	display: flex;
-	
-}
+
