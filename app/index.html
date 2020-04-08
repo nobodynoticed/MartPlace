@@ -37,12 +37,14 @@
                             </a>
                         </div>
                         <div class="header__user-box">
-                            <div class="header__user-avatar" style=""></div>
-                            <div class="header__user-name">
-                                <a class="header__user-link" href="#">Taofiq Hakim</a>
-                            </div>
-                            <div class="header__user-price">
-                                $20.45
+                            <img class="header__user-avatar" src="./images/avatar.svg" alt="">
+                            <div class="header__user-text">
+                                <div class="header__user-name">
+                                    <a class="header__user-link" href="#">Taofiq Hakim</a>
+                                </div>
+                                <div class="header__user-price">
+                                    $20.45
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -51,15 +53,25 @@
         </div>
         <div class="header__menu">
             <div class="container">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li><a class="menu__item" href="#">HOME</a></li>
-                        <li><a class="menu__item" href="#">all products</a></li>
-                        <li><a class="menu__item" href="#">wordpress</a></li>
-                        <li><a class="menu__item" href="#">festures</a></li>
-                        <li><a class="menu__item" href="#">Pages</a></li>
-                    </ul>
-                </nav>
+                <div class="header__menu-inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">all products</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">wordpress</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">festures</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search__inner-form">
+                        <form action="#">
+                            <input type="text" placeholder="Search product here..." required>
+                            <button class="search__btn" type="submit">
+                                <img src="./images/icons/magnifier.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
