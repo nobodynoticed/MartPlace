@@ -3,4 +3,57 @@
 @import 'global';
 
 
+// header start 
+
+.header {
+    &__top {
+        background-color: #eef1f3;
+    }
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 540px;
+        margin-left: auto;
+        &-link {
+            display: inline-block;
+        }
+        &-icon {
+            height: 20px;
+        }
+    }
+    &__user-link {
+        color: #333333;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    &__user-price {
+        color: $blue;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+.btn {
+    width: 140px;
+    border-radius: 18px;
+    background-color: $blue;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    &__link {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 28px;
+        padding: 5px 5px;
+    }
+}
+
+
+
 
