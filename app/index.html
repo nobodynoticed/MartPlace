@@ -92,12 +92,24 @@
                     <button class="btn-pop-prod btn-style">Popular Products</button>
                 </div>
 
-                <div class="product__inner-form">
-                    <form action="#">
-                        <input class="product__form" type="text" placeholder="Search your products..." required>
-                        <a href="#">All Categories</a>
-                        <button class="product__search-btn">Search Now</button>
-                    </form>
+                <div class="form-wraps">
+                    <div class="another-forms"></div>
+                    <div class="another-forms-second"></div>
+                    <div class="product__inner-form">
+                        <form class="product__form" action="#">
+                            <div class="product__form-wrap">
+                                <input class="product__inp" type="text" placeholder="Search your products..." required>
+                                <select>
+                                    <option>All Categories</option>
+                                    <option>Popular Products</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="product__btn-wrap">
+                            <button class="product__search-btn">Search Now</button>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
