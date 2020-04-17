@@ -2,125 +2,293 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MartPlace</title>
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MartPlace</title>
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="header__top">
+	<header class="header">
+		<div class="header__top">
 
-            <div class="container">
-                <div class="header__top-inner">
-                    <div class="header__logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="">
-                        </a>
-                    </div>
-                    <div class="header__info">
-                        <div class="btn">
-                            <a class="btn__link" href="#">Become a Seller</a>
-                        </div>
-                        <div class="header__info-panel">
-                            <a class="header__info-link" href="#">
-                                <img class="header__info-icon" src="./images/icons/alarm.svg" alt="">
-                            </a>
-                            <a class="header__info-link" href="#">
-                                <img class="header__info-icon" src="./images/icons/envelope.svg" alt="">
-                            </a>
-                            <a class="header__info-link" href="#">
-                                <img class="header__info-icon" src="./images/icons/cart.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="header__user-box">
-                            <img class="header__user-avatar" src="./images/avatar.svg" alt="">
-                            <div class="header__user-text">
-                                <div class="header__user-name">
-                                    <a class="header__user-link" href="#">Taofiq Hakim</a>
-                                </div>
-                                <div class="header__user-price">
-                                    $20.45
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header__menu">
-            <div class="container">
-                <div class="header__menu-inner">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">all products</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">wordpress</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">festures</a></li>
-                            <li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
-                        </ul>
-                    </nav>
-                    <div class="search__inner-form">
-                        <form action="#">
-                            <input type="text" placeholder="Search product here..." required>
-                            <button class="search__btn" type="submit">
-                                <img src="./images/icons/magnifier.svg" alt="">
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+			<div class="container">
+				<div class="header__top-inner">
+					<a href="#">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div class="header__info">
+						<div class="btn">
+							<a class="btn__link" href="#">Become a Seller</a>
+						</div>
+						<div class="header__info-panel">
 
-    <section class="product" style="background-image: url(./images/bg-product.jpg);">
-        <div class="container">
-            <div class="product__inner">
-                <div class="product__title-text">
-                    <span>Create Your Own</span>
-                    <h1>Digital Product Marketplace</h1>
-                </div>
-                <div class="product__subtitle">
-                    MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-                </div>
+							<a class="header__info-link" href="#">
+								<span class="lnr lnr-alarm"></span>
+							</a>
 
-                <div class="product__btns">
-                    <button class="btn-all-prod btn-style">View All Products</button>
-                    <button class="btn-pop-prod btn-style">Popular Products</button>
-                </div>
+							<a class="header__info-link envelope" href="#">
+								<span class="lnr lnr-envelope"></span>
+							</a>
+							<a class="header__info-link cart" href="#">
+								<span class="lnr lnr-cart"></span>
+							</a>
+						</div>
+						<div class="header__user-box">
+							<img class="header__user-avatar" src="./images/avatar.svg" alt="">
+							<div class="header__user-text">
+								<div class="header__user-name">
+									<a class="header__user-link" href="#">Taofiq Hakim</a>
+								</div>
+								<div class="header__user-price">
+									$20.45
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__menu">
+			<div class="container">
+				<div class="header__menu-inner">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">all products</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">wordpress</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">festures</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
+						</ul>
+					</nav>
+					<div class="search__inner-form">
+						<form action="#">
+							<input type="text" placeholder="Search product here..." required>
+							<button class="search__btn" type="submit">
+								<span class="lnr lnr-magnifier"></span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-                <div class="form-wraps">
-                    <div class="another-forms"></div>
-                    <div class="another-forms-second"></div>
-                    <div class="product__inner-form">
-                        <form class="product__form" action="#">
-                            <div class="product__form-wrap">
-                                <input class="product__inp" type="text" placeholder="Search your products..." required>
-                                <select>
-                                    <option>All Categories</option>
-                                    <option>Popular Products</option>
-                                </select>
-                            </div>
-                        </form>
-                        <div class="product__btn-wrap">
-                            <button class="product__search-btn">Search Now</button>
-                        </div>
-                    </div>
+	<section class="product product--bg">
+		<div class="container">
+			<div class="product__inner">
+				<div class="product__title-text">
+					<span>Create Your Own</span>
+					<h1>Digital Product Marketplace</h1>
+				</div>
+				<div class="product__subtitle">
+					MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+				</div>
 
-                </div>
+				<div class="product__btns">
+					<a href="#" class="product__btn">View All Products</a>
+					<a href="#" class="product__btn  product__btn--mrg">Popular Products</a>
+				</div>
 
-            </div>
-        </div>
+				<div class="form-wraps">
+					<div class="another-forms"></div>
+					<div class="another-forms-second"></div>
+					<div class="product__inner-form form-first-shadow ">
+						<form class="product__form" action="#">
+							<div class="product__form-wrap">
+								<input class="product__inp" type="text" placeholder="Search your products..." required>
+								<select size="1">
+									<option>All Categories</option>
+									<option>Popular Products</option>
+								</select>
+							</div>
+							<div class="product__btn-wrap">
+								<button class="product__search-btn" type="submit">Search Now</button>
+							</div>
+						</form>
+					</div>
+				</div>
 
-    </section>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="advantages">
+		<div class="container">
+			<div class="advantages__inner">
+
+				<div class="advantages__item">
+					<div class="advantages__item-img">
+						<img src="./images/advantages-ux.png" alt="">
+					</div>
+					<div class="advantages__item-title">
+						<a href="#">Best UX Research</a>
+					</div>
+					<p class="advantages__item-descr">
+						Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+						the mattis, leo quam aliquet diam
+						congue is laoreet elit metus.
+					</p>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item-img">
+						<img src="./images/advantages-resp.png" alt="">
+					</div>
+					<div class="advantages__item-title">
+						<a href="#">Fully Responsive</a>
+					</div>
+					<p class="advantages__item-descr">
+						Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+						the mattis, leo quam aliquet diam
+						congue is laoreet elit metus.
+					</p>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item-img">
+						<img src="./images/advantages-buy-sell.png" alt="">
+					</div>
+					<div class="advantages__item-title">
+						<a href="#">Buy & Sell Easily</a>
+					</div>
+					<p class="advantages__item-descr">
+						Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+						the mattis, leo quam aliquet diam
+						congue is laoreet elit metus.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="weeklyprod">
+		<div class="container">
+			<div class="weeklyprod__inner">
+				<div class="selection-bar selection-bar--mrgbtm">
+					<div class="selection-bar__title">
+						Weekly Featured Products
+					</div>
+					<div class="selection-bar__arrows"></div>
+				</div>
+				<div class="weeklyprod__slider-wrap">
+
+					<div class="weeklyprod__slider-item">
+						<div class="weeklyprod__slider-content">
+							<div class="weeklyprod__slider-img"
+								style="background-image: url('images/slider-img/prod-slide-1.jpg');"></div>
+							<div class="weeklyprod__slider-descr">
+								<div class="weeklyprod__slider-title">
+									One Page Resume Template
+								</div>
+								<div class="weeklyprod__slider-user">
+									<a href="#" class="weeklyprod__slider-username">AazzTech</a>
+									<a href="#" class="weeklyprod__slider-userprod">WordPress</a>
+								</div>
+								<p class="weeklyprod__slider-text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+									pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+									scelerisque.
+								</p>
+								<div class="weeklyprod__slider-otherprod">
+									<a href="#">website</a>
+									<a href="#">plugin</a>
+									<a href="#">landing page</a>
+								</div>
+								<div class="offer-panel">
+									<div class="offer-panel__price">
+										<a class="panel-btn" href="#">$10 - $50</a>
+										<a class="offer-panel__like" href="#"><span class="lnr lnr-heart"></span>46</a>
+										<a class="offer-panel__cart" href="#"><span class="lnr lnr-cart"></span> 634</a>
+									</div>
+									<div class="rate-star"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="weeklyprod__slider-item">
+						<div class="weeklyprod__slider-content">
+							<div class="weeklyprod__slider-img"
+								style="background-image: url('images/slider-img/prod-slide-1.jpg');"></div>
+							<div class="weeklyprod__slider-descr">
+								<div class="weeklyprod__slider-title">
+									One Page Resume Template
+								</div>
+								<div class="weeklyprod__slider-user">
+									<a href="#" class="weeklyprod__slider-username">AazzTech</a>
+									<a href="#" class="weeklyprod__slider-userprod">WordPress</a>
+								</div>
+								<p class="weeklyprod__slider-text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+									pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+									scelerisque.
+								</p>
+								<div class="weeklyprod__slider-otherprod">
+									<a href="#">website</a>
+									<a href="#">plugin</a>
+									<a href="#">landing page</a>
+								</div>
+								<div class="offer-panel">
+									<div class="offer-panel__price">
+										<a class="panel-btn" href="#">$10 - $50</a>
+										<a class="offer-panel__like" href="#"><span class="lnr lnr-heart"></span>46</a>
+										<a class="offer-panel__cart" href="#"><span class="lnr lnr-cart"></span> 634</a>
+									</div>
+									<div class="rate-star"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="weeklyprod__slider-item">
+						<div class="weeklyprod__slider-content">
+							<div class="weeklyprod__slider-img"
+								style="background-image: url('images/slider-img/prod-slide-1.jpg');"></div>
+							<div class="weeklyprod__slider-descr">
+								<div class="weeklyprod__slider-title">
+									One Page Resume Template
+								</div>
+								<div class="weeklyprod__slider-user">
+									<a href="#" class="weeklyprod__slider-username">AazzTech</a>
+									<a href="#" class="weeklyprod__slider-userprod">WordPress</a>
+								</div>
+								<p class="weeklyprod__slider-text">
+									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+									the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent
+									pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+									scelerisque.
+								</p>
+								<div class="weeklyprod__slider-otherprod">
+									<a href="#">website</a>
+									<a href="#">plugin</a>
+									<a href="#">landing page</a>
+								</div>
+								<div class="offer-panel">
+									<div class="offer-panel__price">
+										<a class="panel-btn" href="#">$10 - $50</a>
+										<a class="offer-panel__like" href="#"><span class="lnr lnr-heart"></span>46</a>
+										<a class="offer-panel__cart" href="#"><span class="lnr lnr-cart"></span> 634</a>
+									</div>
+									<div class="rate-star"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
