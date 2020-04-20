@@ -14,4 +14,6 @@ $(document).ready(function () {
         readOnly: true
     });
 
+    var mixer = mixitup('.filter-prod__inner-box');
+
 });
