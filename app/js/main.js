@@ -1,20 +1,21 @@
 $(document).ready(function () {
     $('.weeklyprod__slider-wrap').slick({
         arrows: true,
-        prevArrow: '<span class="lnr lnr-chevron-left"></span>',
-        nextArrow: '<span class="lnr lnr-chevron-right"></span>'
+        prevArrow: '<button class="lnr lnr-chevron-left"></button>',
+        nextArrow: '<button class="lnr lnr-chevron-right"></button>'
     });
 
     $('.slider-followers__slider').slick({
         arrows: true,
-        prevArrow: '<span class="lnr lnr-chevron-left"></span>',
-        nextArrow: '<span class="lnr lnr-chevron-right"></span>',
+        prevArrow: '<button class="lnr lnr-chevron-left"></button>',
+        nextArrow: '<button class="lnr lnr-chevron-right"></button>',
         slidesToShow: 3,
         // centerMode: true,
         infinite: true
     });
 
-    
+    $('select').styler();
+
 
     $(".rate-star").rateYo({
         rating: 4.5,
@@ -32,6 +33,9 @@ $(document).ready(function () {
         readOnly: true
     });
 
-    var mixer = mixitup('.filter-prod__inner-box');
+    let mix = $('.filter-prod__box');
+    if (mix) {
+        var mixer = mixitup(mix); 
+    }
 
 });

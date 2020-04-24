@@ -37,10 +37,10 @@
 @font-face {
 	font-family: 'Linearicons-Free';
 	src: url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
-		 url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
-	 	 url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+		 url('../fonts/Linearicons-Free.woff?w118d') format('woff');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;;
 }
 
 .lnr {

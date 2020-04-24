@@ -11,94 +11,92 @@
 
 <body>
 
-	<main>
+	<header class="header">
+		<div class="header__top">
 
-		<header class="header">
-			<div class="header__top">
+			<div class="container">
+				<div class="header__top-inner">
+					<a class="header-logo" href="#">
+						<img src="images/logo.png" alt="">
+					</a>
+					<div class="header__info">
+						<a class="header-btn" href="#">Become a Seller</a>
+						<div class="header__circles">
+							<a class="lnr lnr-alarm circle" href="#">
+								<span class="red-circle">25</span>
+							</a>
+							<a class="lnr lnr-envelope circle" href="#">
+								<span class="green-circle">6</span>
+							</a>
+							<a class="lnr lnr-cart circle" href="#">
+								<span class="blue-circle">2</span>
+							</a>
+						</div>
 
-				<div class="container">
-					<div class="header__top-inner">
-						<a href="#">
-							<img src="images/logo.png" alt="">
-						</a>
-						<div class="header__info">
-							<div class="btn">
-								<a class="btn__link" href="#">Become a Seller</a>
-							</div>
-							<div class="header__info-panel">
-
-								<a class="header__info-link" href="#">
-									<span class="lnr lnr-alarm"></span>
-								</a>
-
-								<a class="header__info-link envelope" href="#">
-									<span class="lnr lnr-envelope"></span>
-								</a>
-								<a class="header__info-link cart" href="#">
-									<span class="lnr lnr-cart"></span>
-								</a>
-							</div>
-							<div class="header__user-box">
-								<img class="header__user-avatar" src="./images/avatar.svg" alt="">
-								<div class="header__user-text">
-									<div class="header__user-name">
-										<a class="header__user-link" href="#">Taofiq Hakim</a>
-									</div>
-									<div class="header__user-price">
-										$20.45
-									</div>
+						<div class="header__user-box">
+							<img class="header__avatar" src="./images/avatar.svg" alt="">
+							<div class="header__text">
+								<div class="header__user-name">
+									<a class="header__user-link" href="#">Taofiq Hakim</a>
+								</div>
+								<div class="header__price">
+									$20.45
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="header__menu">
-				<div class="container">
-					<div class="header__menu-inner">
-						<nav class="menu">
-							<ul class="menu__list">
-								<li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">all products</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">wordpress</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">festures</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
-							</ul>
-						</nav>
-						<div class="search-form">
-							<form>
-								<input class="search-form__input" type="search" placeholder="Search product here..."
-									required>
-								<button class="search-form__btn" type="submit">
-									<span class="lnr lnr-magnifier"></span>
-								</button>
-							</form>
-						</div>
+		</div>
+		<div class="header__menu">
+			<div class="container">
+				<div class="header__menu-inner">
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">all products</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">wordpress</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">festures</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
+						</ul>
+					</nav>
+					<div class="search-form">
+						<form>
+							<input class="search-form__input" type="search" placeholder="Search product here..."
+								required>
+							<button class="search-form__btn" type="submit">
+								<span class="lnr lnr-magnifier"></span>
+							</button>
+						</form>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
+	</header>
 
+	<main>
 		<section class="product product--bg">
 			<div class="container">
 				<div class="product__inner">
-					<div class="product__title-text">
-						<span>Create Your Own</span>
-						<h1>Digital Product Marketplace</h1>
-					</div>
-					<div class="product__subtitle">
-						MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+					<div class="product-promo">
+						<div class="product__title-text">
+							<span>Create Your Own</span>
+							<h1 class="product__title">Digital Product Marketplace</h1>
+						</div>
+						<div class="product__subtitle">
+							MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+						</div>
+
+						<div class="product__btns">
+							<a href="#" class="product__btn">View All Products</a>
+							<a href="#" class="product__btn ">Popular Products</a>
+						</div>
 					</div>
 
-					<div class="product__btns">
-						<a href="#" class="product__btn">View All Products</a>
-						<a href="#" class="product__btn ">Popular Products</a>
-					</div>
-
-					<div class="form-wraps">
-						<div class="another-forms"></div>
-						<div class="another-forms-second"></div>
-						<div class="product__inner-form form-first-shadow ">
+					<div class="product-wraps">
+						<div class="product-forms"></div>
+						<div class="product__forms-second"></div>
+						<div class="product__inner-form">
 							<form class="product__form" action="#">
 								<div class="product__form-wrap">
 									<input class="product__inp" type="search" placeholder="Search your products..."
@@ -109,7 +107,7 @@
 									</select>
 								</div>
 								<div class="product__btn-wrap">
-									<button class="search-btn" type="submit">Search Now</button>
+									<button class="search-top-btn" type="submit">Search Now</button>
 								</div>
 							</form>
 						</div>
@@ -232,9 +230,9 @@
 										scelerisque.
 									</p>
 									<div class="weeklyprod__slider-otherprod">
-										<a href="#">website</a>
-										<a href="#">plugin</a>
-										<a href="#">landing page</a>
+										<a class="weeklyprod__slider-link" href="#">website</a>
+										<a class="weeklyprod__slider-link" href="#">plugin</a>
+										<a class="weeklyprod__slider-link" href="#">landing page</a>
 									</div>
 									<div class="offer-panel">
 										<div class="offer-panel__price">
@@ -270,9 +268,9 @@
 										scelerisque.
 									</p>
 									<div class="weeklyprod__slider-otherprod">
-										<a href="#">website</a>
-										<a href="#">plugin</a>
-										<a href="#">landing page</a>
+										<a class="weeklyprod__slider-link" href="#">website</a>
+										<a class="weeklyprod__slider-link" href="#">plugin</a>
+										<a class="weeklyprod__slider-link" href="#">landing page</a>
 									</div>
 									<div class="offer-panel">
 										<div class="offer-panel__price">
@@ -310,18 +308,18 @@
 
 					<div class="filter-prod__inner">
 
-						<div class="filter-prod__inner-btns">
-							<button class="filter-prod__inner-btn" data-filter=".category-plugin">Plugins</button>
-							<button class="filter-prod__inner-btn" data-filter=".category-html">WordPress</button>
-							<button class="filter-prod__inner-btn" data-filter=".category-psd">Site Template</button>
-							<button class="filter-prod__inner-btn" data-filter=".category-psd">PSD Template</button>
-							<button class="filter-prod__inner-btn" data-filter=".category-plugin">Joomla</button>
-							<button class="filter-prod__inner-btn" data-filter=".category-html">User Interface</button>
-							<button class="filter-prod__inner-btn" data-filter=".category-plugin">Landing Page</button>
-							<button class="filter-prod__inner-btn" data-filter=".category-html">Software</button>
+						<div class="filter-prod__btns">
+							<button class="filter-prod__btn" data-filter=".category-plugin">Plugins</button>
+							<button class="filter-prod__btn" data-filter=".category-wordpress">WordPress</button>
+							<button class="filter-prod__btn" data-filter=".category-template">Site Template</button>
+							<button class="filter-prod__btn" data-filter=".category-psd">PSD Template</button>
+							<button class="filter-prod__btn" data-filter=".category-joomla">Joomla</button>
+							<button class="filter-prod__btn" data-filter=".category-html">User Interface</button>
+							<button class="filter-prod__btn" data-filter=".category-landing">Landing Page</button>
+							<button class="filter-prod__btn" data-filter=".category-software">Software</button>
 						</div>
 
-						<div class="filter-prod__inner-box">
+						<div class="filter-prod__box">
 
 							<div class="filter-prod__item mix category-plugin" data-order="1">
 								<div class="filter-prod__item-img"
@@ -364,7 +362,7 @@
 								</div>
 							</div>
 
-							<div class="filter-prod__item mix category-psd" data-order="2">
+							<div class="filter-prod__item mix category-wordpress" data-order="2">
 								<div class="filter-prod__item-img"
 									style="background-image: url('./images/content/prod-logo-img.jpg');"></div>
 								<div class="filter-prod__item-content">
@@ -398,7 +396,7 @@
 								</div>
 							</div>
 
-							<div class="filter-prod__item mix category-html" data-order="3">
+							<div class="filter-prod__item mix category-template" data-order="3">
 								<div class="filter-prod__item-img"
 									style="background-image: url('./images/content/prod-logo-img2.jpg');"></div>
 								<div class="filter-prod__item-content">
@@ -434,7 +432,7 @@
 								</div>
 							</div>
 
-							<div class="filter-prod__item mix category-plugin category-poplular" data-order="4">
+							<div class="filter-prod__item mix category-psd category-popular" data-order="4">
 								<div class="filter-prod__item-img"
 									style="background-image: url('./images/content/prod-logo-img2.jpg');">
 								</div>
@@ -470,7 +468,7 @@
 								</div>
 							</div>
 
-							<div class="filter-prod__item mix category-psd" data-order="5">
+							<div class="filter-prod__item mix category-joomla" data-order="5">
 								<div class="filter-prod__item-img"
 									style="background-image: url('./images/content/prod-logo-img.jpg');">
 								</div>
@@ -793,23 +791,23 @@
 				<div class="info__inner">
 					<div class="info__item">
 						<span class="lnr lnr-briefcase"></span>
-						<div class="info__item-numbers">38,436</div>
-						<div class="info__item-descr">items for sale</div>
+						<div class="info__numbers">38,436</div>
+						<div class="info__descr">items for sale</div>
 					</div>
 					<div class="info__item">
 						<span class="lnr lnr-cloud-download"></span>
-						<div class="info__item-numbers">3,736</div>
-						<div class="info__item-descr">total sales</div>
+						<div class="info__numbers">3,736</div>
+						<div class="info__descr">total sales</div>
 					</div>
 					<div class="info__item">
 						<span class="lnr lnr-smile"></span>
-						<div class="info__item-numbers">2,736</div>
+						<div class="info__numbers">2,736</div>
 						<div class="info__item-descr">happy customers</div>
 					</div>
 					<div class="info__item">
 						<span class="lnr lnr-users"></span>
-						<div class="info__item-numbers">25,736</div>
-						<div class="info__item-descr">members</div>
+						<div class="info__numbers">25,736</div>
+						<div class="info__descr">members</div>
 					</div>
 				</div>
 			</div>
@@ -893,9 +891,34 @@
 			</div>
 		</section>
 
+		<section class="start" style="background-image: url('../images/start-bg.jpg');">
+			<div class="start__inner">
+				<div class="start__item">
+					<img src="./images/icons/sell-icon.png" alt="sell-icon" class="start__img">
+					<h3 class="start__title">
+						Sell Your Products
+					</h3>
+					<p class="start__text">
+						Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+						the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+					</p>
+					<a href="#" class="button">Become an Author</a>
+				</div>
+				<div class="start__item">
+					<img src="./images/icons/buy-icon.png" alt="buy-icon" class="start__img">
+					<h3 class="start__title">
+						Start Shopping Today
+					</h3>
+					<p class="start__text">
+						Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+						the mattis, leo quam aliquet diamcongue is laoreet elit metus.
+					</p>
+					<a href="#" class="button button--purple">Start Shopping</a>
+				</div>
+			</div>
+		</section>
+
 	</main>
-
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
