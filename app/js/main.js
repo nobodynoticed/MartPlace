@@ -1,14 +1,14 @@
 $(document).ready(function () {
     $('.weeklyprod__slider-wrap').slick({
         arrows: true,
-        prevArrow: '<button class="lnr lnr-chevron-left"></button>',
-        nextArrow: '<button class="lnr lnr-chevron-right"></button>'
+        prevArrow: '<span class="lnr lnr-chevron-left"></span>',
+        nextArrow: '<span class="lnr lnr-chevron-right"></span>'
     });
 
     $('.slider-followers__slider').slick({
         arrows: true,
-        prevArrow: '<button class="lnr lnr-chevron-left"></button>',
-        nextArrow: '<button class="lnr lnr-chevron-right"></button>',
+        prevArrow: '<span class="lnr lnr-chevron-left"></span>',
+        nextArrow: '<span class="lnr lnr-chevron-right"></span>',
         slidesToShow: 3,
         // centerMode: true,
         infinite: true

@@ -15,12 +15,12 @@
 		<div class="header__top">
 
 			<div class="container">
-				<div class="header__top-inner">
-					<a class="header-logo" href="#">
-						<img src="images/logo.png" alt="">
+				<div class="header__inner">
+					<a class="header__logo" href="#" alt="header-logo">
+						<img class="header__logo-img" src="images/logo.png" alt="logo">
 					</a>
 					<div class="header__info">
-						<a class="header-btn" href="#">Become a Seller</a>
+						<a class="header__btn" href="#">Become a Seller</a>
 						<div class="header__circles">
 							<a class="lnr lnr-alarm circle" href="#">
 								<span class="red-circle">25</span>
@@ -34,7 +34,7 @@
 						</div>
 
 						<div class="header__user-box">
-							<img class="avatar" src="./images/avatar.svg" alt="">
+							<img class="header__avatar" src="./images/avatar.svg" alt="avatar">
 							<div class="header__text">
 								<a class="user-name" href="#">Taofiq Hakim</a>
 								<div class="header__price">
@@ -76,7 +76,7 @@
 		<section class="product product--bg">
 			<div class="container">
 				<div class="product__inner">
-					<div class="product-promo">
+					<div class="product__promo">
 						<div class="product__title-text">
 							<span>Create Your Own</span>
 							<h1 class="product__title">Digital Product Marketplace</h1>
@@ -300,7 +300,14 @@
 						</h2>
 						<div class="selection-bar__filter">
 							Filter by:
-							<img class="selection-bar__img" src="./images/icons/filter-dots.png" alt="">
+							<img class="selection-bar__img" src="./images/icons/filter-dots.png" alt="filter-icon">
+							<ul class="dropdown">
+								<li class="dropdown__item"><a class="dropdown__link" href="#">Trending items</a></li>
+								<li class="dropdown__item"><a class="dropdown__link" href="#">Best seller</a></li>
+								<li class="dropdown__item"><a class="dropdown__link" href="#">Best rating</a></li>
+								<li class="dropdown__item"><a class="dropdown__link" href="#">Low price</a></li>
+								<li class="dropdown__item"><a class="dropdown__link" href="#">High price</a></li>
+							</ul>
 						</div>
 					</div>
 
@@ -321,13 +328,16 @@
 
 							<div class="filter-prod__item mix category-plugin" data-order="1">
 								<div class="filter-prod__item-img"
-									style="background-image: url('./images/content/prod-gradient.jpg');">
-									<a class="filter-prod__img-btn" href="#">
-										More Info
-									</a>
-									<a class="filter-prod__img-btn" href="#">
-										Live Demo
-									</a>
+									style="background-image: url('./images/content/prod-logo-img2.jpg');">
+									<div class="filter-prod__img-info"
+										style=" background-image: url(./images/content/prod-gradient.jpg);">
+										<a class="filter-prod__img-btn" href="#">
+											More Info
+										</a>
+										<a class="filter-prod__img-btn" href="#">
+											Live Demo
+										</a>
+									</div>
 								</div>
 								<div class="filter-prod__item-content">
 									<div class="filter-prod__item-name">
@@ -362,7 +372,17 @@
 
 							<div class="filter-prod__item mix category-wordpress" data-order="2">
 								<div class="filter-prod__item-img"
-									style="background-image: url('./images/content/prod-logo-img.jpg');"></div>
+									style="background-image: url('./images/content/prod-logo-img.jpg');">
+									<div class="filter-prod__img-info"
+										style=" background-image: url(./images/content/prod-gradient.jpg);">
+										<a class="filter-prod__img-btn" href="#">
+											More Info
+										</a>
+										<a class="filter-prod__img-btn" href="#">
+											Live Demo
+										</a>
+									</div>
+								</div>
 								<div class="filter-prod__item-content">
 									<div class="filter-prod__item-name">
 										Marketify Coffee Shop
@@ -396,7 +416,17 @@
 
 							<div class="filter-prod__item mix category-template" data-order="3">
 								<div class="filter-prod__item-img"
-									style="background-image: url('./images/content/prod-logo-img2.jpg');"></div>
+									style="background-image: url('./images/content/prod-logo-img2.jpg');">
+									<div class="filter-prod__img-info"
+										style=" background-image: url(./images/content/prod-gradient.jpg);">
+										<a class="filter-prod__img-btn" href="#">
+											More Info
+										</a>
+										<a class="filter-prod__img-btn" href="#">
+											Live Demo
+										</a>
+									</div>
+								</div>
 								<div class="filter-prod__item-content">
 									<div class="filter-prod__item-name">
 										Bryson - Portfolio Template
@@ -433,6 +463,15 @@
 							<div class="filter-prod__item mix category-psd category-popular" data-order="4">
 								<div class="filter-prod__item-img"
 									style="background-image: url('./images/content/prod-logo-img2.jpg');">
+									<div class="filter-prod__img-info"
+										style=" background-image: url(./images/content/prod-gradient.jpg);">
+										<a class="filter-prod__img-btn" href="#">
+											More Info
+										</a>
+										<a class="filter-prod__img-btn" href="#">
+											Live Demo
+										</a>
+									</div>
 								</div>
 								<div class="filter-prod__item-content">
 									<div class="filter-prod__item-name">
@@ -469,6 +508,15 @@
 							<div class="filter-prod__item mix category-joomla" data-order="5">
 								<div class="filter-prod__item-img"
 									style="background-image: url('./images/content/prod-logo-img.jpg');">
+									<div class="filter-prod__img-info"
+										style=" background-image: url(./images/content/prod-gradient.jpg);">
+										<a class="filter-prod__img-btn" href="#">
+											More Info
+										</a>
+										<a class="filter-prod__img-btn" href="#">
+											Live Demo
+										</a>
+									</div>
 								</div>
 								<div class="filter-prod__item-content">
 									<div class="filter-prod__item-name">
@@ -504,6 +552,15 @@
 							<div class="filter-prod__item mix category-html category-poplular" data-order="6">
 								<div class="filter-prod__item-img"
 									style="background-image: url('./images/content/prod-logo-img2.jpg');">
+									<div class="filter-prod__img-info"
+										style=" background-image: url(./images/content/prod-gradient.jpg);">
+										<a class="filter-prod__img-btn" href="#">
+											More Info
+										</a>
+										<a class="filter-prod__img-btn" href="#">
+											Live Demo
+										</a>
+									</div>
 								</div>
 								<div class="filter-prod__item-content">
 									<div class="filter-prod__item-name">
@@ -562,8 +619,7 @@
 						<div class="weeklyprod__slider-item">
 							<div class="filter-prod__item mix category-plugin category-poplular" data-order="4">
 								<div class="filter-prod__item-img"
-									style="background-image: url('./images/content/prod-logo-img2.jpg');">
-								</div>
+									style="background-image: url('./images/content/prod-logo-img2.jpg');"></div>
 								<div class="filter-prod__item-content">
 									<div class="filter-prod__item-name">
 										E-commerce Shopping Cart
@@ -1093,7 +1149,8 @@
 									href="tel:67898752235">+6789-875-2235</a>
 							</div>
 							<div class="footer__mail-box">
-								<span class="lnr lnr-envelope"></span> <a class="footer__mail-link" href="mailto:support@aazztech.com">support@aazztech.com</a>
+								<span class="lnr lnr-envelope"></span> <a class="footer__mail-link"
+									href="mailto:support@aazztech.com">support@aazztech.com</a>
 							</div>
 							<div class="footer__address-wrap">
 								<span class="lnr lnr-map-marker"></span>
@@ -1106,36 +1163,45 @@
 					<div class="footer__item-company">
 						<h3 class="footer__item-title">Our Company</h3>
 						<ul class="footer__list">
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">About Us</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">How It Work</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Affiliates</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Testimonials</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Contact Us</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Copyright Notice</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Blog</a></li>
+							<li class="footer__list-item"><a class="footer__list-link" href="#">About Us</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#">How It Work</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#">Affiliates</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#">Testimonials</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#">Contact Us</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#">Copyright Notice</a>
+							</li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#">Blog</a></li>
 						</ul>
 					</div>
-					<div class="footer__item-support">
+					<div class=" footer__item-support">
 						<h3 class="footer__item-title">Help Support</h3>
 						<ul class="footer__list">
 							<li class="footer__list-item"><a class="footer__list-link" href="#"">Support Forum</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Terms & Conditions</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Support Policy</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Refund Policy</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">FAQs</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Buyers Faq</a></li>
-							<li class="footer__list-item"><a class="footer__list-link" href="#"">Sellers Faq</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#"">Terms & Conditions</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#"">Support Policy</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#"">Refund Policy</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#"">FAQs</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#"">Buyers Faq</a></li>
+							<li class=" footer__list-item"><a class="footer__list-link" href="#"">Sellers Faq</a></li>
 						</ul>
 					</div>
-					<div class="footer__item-newsletter">
-						<h3 class="footer__item-title">Newsletter</h3>
+					<div class=" footer__item-newsletter">
+						<h3 class="footer__item-title">
+							Newsletter</h3>
 						<p class="footer__text">
-							Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+							Subscribe to get the
+							latest news, update
+							and offer
+							information. Don't
+							worry, we won't send
+							spam!
 						</p>
 						<div class="footer-form">
 							<form>
-								<input class="footer-form__search" type="search" placeholder="Enter email" required>
-								<button class="footer-form__btn" type="submit">Submit</button>
+								<input class="footer-form__search" type="search"
+									placeholder="Enter email" required>
+								<button class="footer-form__btn"
+									type="submit">Submit</button>
 							</form>
 						</div>
 						<div class="footer__socials">
@@ -1154,7 +1220,8 @@
 		<div class="footer__bottom">
 			<div class="container">
 				<div class="footer__copy">
-					©2017 <a class="footer__copy-link" href="#">MartPlace</a>. All rights reserved. Created by <a class="footer__copy-link" href="#">AazzTech</a>
+					©2017 <a class="footer__copy-link" href="#">MartPlace</a>. All rights reserved. Created by <a
+						class="footer__copy-link" href="#">AazzTech</a>
 				</div>
 			</div>
 		</div>
