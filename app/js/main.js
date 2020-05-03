@@ -10,7 +10,6 @@ $(document).ready(function () {
         prevArrow: '<span class="lnr lnr-chevron-left"></span>',
         nextArrow: '<span class="lnr lnr-chevron-right"></span>',
         slidesToShow: 3,
-        // centerMode: true,
         infinite: true
     });
 
