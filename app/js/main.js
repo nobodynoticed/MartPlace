@@ -13,7 +13,7 @@ $(document).ready(function () {
         infinite: true
     });
 
-    $('select').styler();
+    $('.product__select, .sorting__select').styler();
 
 
     $(".rate-star").rateYo({

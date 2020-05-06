@@ -218,6 +218,7 @@
             font-weight: 400;
         }
     }
+
     &__btn {
         position: absolute;
         right: 0;
@@ -234,6 +235,32 @@
             color: #ffffff;
         }
     }
+}
+
+.search-form.themes__search-form {
+    margin: 0 auto;
+    max-width: 555px;
+    width: 100%;
+
+    .search-form__input {
+        padding-right: 115px;
+        width: 100%;
+        min-height: 55px;
+        border-radius: 28px;
+        &::placeholder {
+            font-size: 15px;
+            color: #747b86;
+        }
+    }
+
+    .search-form__btn {
+        min-width: 110px;
+        min-height: 55px;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 28px;
+    }
+
 }
 
 
@@ -1255,6 +1282,7 @@
     }
 
     &__inner {
+        margin-top: 60px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 60px;
@@ -1718,5 +1746,248 @@
 
 // footer end =======================
 
+// page-category.html start =======================
+// section themes start =======================
+
+.themes {
+    padding-top: 85px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 280px;
+    &__title {
+        margin-bottom: 33px;
+        text-align: center;
+        font-size: 26px;
+        color: #f3f3f8;
+        font-weight: 400;
+    }
+    &__title--fw-500 {
+        font-weight: 500;
+        color: #f3f3f8;
+    }
+}
+
+// section themes end =======================
+// page-category.html end =======================
+
+// section sorting start =======================
+
+.sorting {
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-top: 1px solid #3433bc;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+    }
+    &__filter-box {
+        div + div {
+            margin-left: 30px;
+        }
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        color: #555555;
+        display: inline-block;
+        line-height: 32px;
+        &.active {
+            color: $blue;
+        }
+        & + & {
+            margin-left: 40px;
+        }
+    }
+    &__item--clr-grey {
+        color: #555;
+        font-size: 20px;
+    }
+    .jq-selectbox__select {
+        display: flex;
+        align-items: center;
+        min-width: 220px;
+        min-height: 44px;
+        padding: 0 45px 0 19px;
+        border: 1px solid #eceff2;
+        border-bottom-color: none;
+        border-radius: 3px;
+        background: none;
+        font-family: 'Quicksand';
+        font-size: 14px;
+        color: #747b86;
+        box-shadow: none;
+    }
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
+    .jq-selectbox__trigger-arrow {
+        position: absolute;
+        top: 7px;
+        right: 30px;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        &::before {
+            content: "\e874";
+            position: absolute;
+            top: 0;
+            font-family: 'Linearicons-Free';
+            color: #555;
+            font-size: 10px;
+        }
+    }
+    &__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 96px;
+        min-height: 44px;
+        border: 1px solid #eceff2;
+        border-radius: 3px;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+    &__btn + &__btn {
+        margin-left: 15px;
+    }
+}
+
+// section sorting end =======================
+
+// section prod-page start =======================
+
+.prod-page {
+    background-color: #eff1f5;
+    &__inner {
+        padding-top: 80px;
+        display: flex;
+    }
+}
+
+  
+
+.aside {
+    &__item,
+    &__filter,
+    &__price {
+        min-width: 263px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        padding: 0 30px 0 30px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+    &__filter,
+    &__item {
+        padding-bottom: 35px;
+    }
+    &__title {
+        padding: 30px 0 25px 0;
+        border-bottom: 1px solid #e7ebee;
+        font-size: 20px;
+        color: #010101;
+        font-weight: 500;
+    }
+    &__number {
+        font-size: 15px;
+        color: #747b86;
+    }
+    &__list-item {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    margin-right: 30px;
+    &__list-item {
+        margin: 20px 0 20px 0;
+    }
+    &__label {
+        cursor: pointer;
+    }
+    &__label>&__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__label>&__checkbox-title {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+    &__label>&__checkbox-title::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #7b818c;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+    }
+    &__label>&__checkbox:not(:disabled):active+&__checkbox-title::before {
+        background-color: #b3d7ff;
+        border-color: #b3d7ff;
+    }
+    &__label>&__checkbox:focus+&__checkbox-title::before {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    &__label>&__checkbox:focus:not(:checked)+&__checkbox-title::before {
+        border-color: #80bdff;
+    }
+    &__label>&__checkbox:checked+&__checkbox-title::before {
+        border-color: #0b76ef;
+        background-color: #0b76ef;
+        // background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+    &__label>&__checkbox:disabled+&__checkbox-title::before {
+        background-color: #e9ecef;
+    }
+}
+
+.categories {
+    &__link {
+        padding-left: 20px;
+        color: #555;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        &::before {
+            content: "\e876";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Linearicons-Free';
+            color: #747b86;
+            font-size: 10px;
+        }
+        &.active {
+            color: $blue;
+        }
+
+    }
+}
 
 
+
+
+
+
+
+// section prod-page end =======================
+    
+   

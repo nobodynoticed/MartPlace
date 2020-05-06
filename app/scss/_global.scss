@@ -65,3 +65,33 @@ p {
 	color: #000;
 	font-weight: 400;
 }
+
+.breadcrumbs {
+	&__inner {
+		text-align: center;
+		padding: 37px 30px;
+	}
+	&__item {
+		display: inline-block;
+		position: relative;
+		
+		& + & {
+			padding-left: 24px;
+			&::before {
+				content: '/';
+				position: absolute;
+				left: 8px;
+				color: #fff;
+			}
+		}
+		&:last-child {
+			.breadcrumbs__link,
+			span {
+				color: #bfcad7;
+			}
+		}
+	}
+	&__link {
+		color: #fff;
+	}
+}
